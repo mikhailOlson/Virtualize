@@ -14,6 +14,7 @@
 -- Discord Server
 
 --[[
+
 CommandBar
 
 -- Let's make this automated.
@@ -29,7 +30,6 @@ local Selection = game:GetService("Selection")
 
 for _, object in pairs(Selection:Get()) do
 	if object:IsA("BasePart") then
-
 		local billboard = game.ServerStorage.Billboard:Clone()
 		billboard.Parent = object
 		billboard.Name = object.Name
@@ -39,6 +39,8 @@ for _, object in pairs(Selection:Get()) do
 end
 
 -- Stop Copy
+
+-- SurfaceText
 
 -- Change text of a SurfaceGui
 -- Start Copy
